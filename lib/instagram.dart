@@ -15,7 +15,7 @@ class InstagramProfile extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              // Верхня панель (нік і меню)
+            
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 child: Row(
@@ -37,18 +37,17 @@ class InstagramProfile extends StatelessWidget {
                 ),
               ),
 
-              // Аватарка + Статистика
+        
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 child: Row(
                   children: [
-                    // 🔽 ТУТ вставлене фото з assets 🔽
+               
                     const CircleAvatar(
                       radius: 40,
                       backgroundImage: AssetImage("assets/my_ava.jpg"),
                     ),
 
-                    // Posts, Followers, Following
                     Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -63,7 +62,7 @@ class InstagramProfile extends StatelessWidget {
                 ),
               ),
 
-              // Ім’я та опис
+        
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Column(
@@ -78,7 +77,7 @@ class InstagramProfile extends StatelessWidget {
                 ),
               ),
 
-              // Кнопка Edit Profile
+             
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: SizedBox(
